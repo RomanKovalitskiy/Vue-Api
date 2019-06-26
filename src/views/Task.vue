@@ -138,9 +138,11 @@
         let scrollTop = document.documentElement.scrollTop;
         let clientHeight = document.documentElement.clientHeight;
         let currentScroll = scrollTop + clientHeight;
+
         if ( pageHeight === currentScroll) {
           this.$store.dispatch('fetchInfoUsers', this.$store.state.numberPosts);
         }
+        
       };
     }
   };
